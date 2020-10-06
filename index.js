@@ -63,7 +63,7 @@ client.on('message', message => {
 
 
 
-const prefix = "$"
+const prefix = "."
 const developers = ""
 
 
@@ -84,45 +84,45 @@ const developers = ""
          .setDescription(`
          \`\`\`Main Commands  :\`\`\`         
          
-         - ${prefix}bot : لاظهار معلومات البوت
+         - ${prefix}بوت : بوت
          
-         - ${prefix}avatar : لاظهار صورتك
+         - ${prefix}صورتي : صورتي
 		 
-         - ${prefix}savatar : لاظهار صوره السيرفر
+         - ${prefix}صورة السيرفر : لاظهار صوره السيرفر
          
          - ${prefix}allbots : لاظهار جميع البوتات في السيرفر
          
-         - ${prefix}user : لاظهار معلومات حسابك
+         - ${prefix}يوزر : لاظهار معلومات حسابك
          
-         - ${prefix}server : لاظهار معلومات السيرفر
+         - ${prefix}سيرفر : لاظهار معلومات السيرفر
 
          - ${prefix}ping : لمعرفه سرعه اتصال البوت
 
-         - ${prefix}roles : لاظهار جميع رولات السيرفر
+         - ${prefix}رولات : لاظهار جميع رولات السيرفر
 
          \`\`\`Admin Commands :\`\`\` 
          
          \`Text Commands : \`
          
-         - ${prefix}ban : لتبنيد شخص
+         - ${prefix}بان : لتبنيد شخص
          
-         - ${prefix}kick : لطرد شخص
+         - ${prefix}كيك : لطرد شخص
          
          - ${prefix}bc : برودكاست رساله الى أعضاء السيرفر
          
-         - ${prefix}mute : أسكات
+         - ${prefix}اخرص : أسكات
          
-         - ${prefix}unmute : تكلم
+         - ${prefix}اتكلم : تكلم
          
-         - ${prefix}lock : قفل الشات
+         - ${prefix}اقفل : قفل الشات
          
-         - ${prefix}unlock : لفتح الشات
+         - ${prefix}افتح : لفتح الشات
 
-         - ${prefix}hide : لاخفاء الشات
+         - ${prefix}اخفي الشات : لاخفاء الشات
          
-         - ${prefix}show : لاظهار الشات
+         - ${prefix}اظهر الشات : لاظهار الشات
          
-         - ${prefix}role : اعظاء رتبه لشخص
+         - ${prefix}رول : اعظاء رتبه لشخص
          
          - ${prefix}role all : اعطاء رتبه للكل
          
@@ -130,7 +130,7 @@ const developers = ""
          
          - ${prefix}role bots : اعطاء رتبه لبوت
          
-         - ${prefix}say : البوت يكرر كلامك
+         - ${prefix}s : البوت يكرر كلامك
          
          - ${prefix}embed : كلام بامبد جميل
          
@@ -140,9 +140,9 @@ const developers = ""
 
          \`\`\`Credits Commands  :\`\`\`  
 
-        - ${prefix}credits : لمعرفه رصيدك
+        - ${prefix}رصيدي : لمعرفه رصيدك
 
-        - ${prefix}daily : لسحب جائزه يوميه
+        - ${prefix}هديتي : لسحب جائزه يوميه
 
          لتحويل رصيد الى شخص
         - ${prefix}credits <المبلغ> <منشن للشخص> 
@@ -156,7 +156,7 @@ https://www.youtube.com/channel/UC_MsQabWHZKBXh4TvZenyTw
          
 `)
    message.channel.send(e).then(m => m.delete(5000))
-   message.author.sendEmbed(embed).catch(error => message.reply('**أفـتح الخــاص**'))
+   message.author.sendEmbed(embed).catch(error => message.reply('**افتح الخاص ي كسمك**'))
    
    }
    });
